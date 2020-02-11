@@ -2,7 +2,7 @@
 
 Use face-api.js to detect facial expression from webcam and compare with actors/actresses within a database! The database comprises of characters from my favourite films of the past decade. Feel free to add your own.
 
-***Only works in Google Chrome browsers currently***
+***Only works in Google Chrome browsers currently.***
 
 ## To Get Started...
 
