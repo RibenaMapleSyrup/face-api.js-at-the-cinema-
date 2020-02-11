@@ -1,0 +1,48 @@
+<html>
+<head>
+  <meta charset="UTF-8" >
+  <meta name="viewport" content="width=device-width,
+  initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script defer src="/node_modules/face-api.js/dist/face-api.min.js"></script>
+  <script defer src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <script defer src="http://cdnjs.cloudflare.com/ajax/libs/jquery.form/3.51/jquery.form.min.js"></script>
+  <script defer src="upload.js"></script>
+  <title>Upload.html</title>
+
+</head>
+
+<body>
+          <form id="uploadForm"
+            enctype="multipart/form-data"
+            action="/upload_image"
+            method="post">
+          <br>
+          <div>
+            <label>character:</label>
+            <input name="character" type="text">
+          </div>
+          <br>
+          <div>
+            <label>actor/actress:</label>
+            <input name="name" type="text">
+          </div>
+          <br>
+          <div>
+            <label>film:</label>
+            <input name="film" type="text">
+          </div>
+          <br>
+          <div>
+            <label>famous quote:</label>
+            <input name="quote" type="text">
+          </div>
+          <br>
+          <div>
+            <input id="uploaded" type="file" name="photo" />
+            <input id="submit" type="submit" value="Upload Image" name="submit">
+            <span id = "status"></span>
+          </div>
+        </form>
+</body>
+</html>

@@ -1,0 +1,55 @@
+body {
+  background-color: black;
+}
+
+video {
+  width: 650px;
+  height: 480px;
+  position: absolute;
+  left: 0;
+  object-fit: cover;
+}
+
+#canvasContainer {
+  width: 650px;
+  height: 560px;
+  position: relative;
+}
+
+#overlay {
+  width: 800px;
+  height:1000px;
+  color: red;
+  position: absolute;
+  z-index:10;
+}
+
+canvas {
+  position: absolute;
+  left: 0;
+}
+
+.topAndBottomMargin {
+  margin: 15px 0px;
+}
+
+.topAndBottomPadding {
+  padding: 15px 0px;
+}
+
+.centreAlignment {
+  vertical-align: middle;
+  text-align: center;
+}
+
+.header {
+  padding-top: 120px;
+  padding-bottom: 10px;
+}
+
+.footer {
+  vertical-align: middle;
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 10px;
+}
