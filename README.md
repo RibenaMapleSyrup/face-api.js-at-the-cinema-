@@ -1,6 +1,6 @@
 # face-api.js-at-the-cinema-
 
-This repository is uses face-api.js to detect facial expression from webcam and compare with actors/actresses within a database.
+Use face-api.js to detect facial expression from webcam and compare with actors/actresses within a database! The database comprises of characters from my favourite films of the past decade. Feel free to add your own.
 
 ## To Get Started...
 
