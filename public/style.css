@@ -53,3 +53,19 @@ canvas {
   padding-top: 30px;
   padding-bottom: 10px;
 }
+
+.whiteText {
+  color: #fffffa;
+}
+
+.fontSize24 {
+  font-size: 1.5rem;
+}
+
+.fontSize32 {
+  font-size: 2rem;
+}
+
+.fontSize48 {
+  font-size: 3rem;
+}

@@ -14,13 +14,13 @@ function startVideo() {
     stream => video.srcObject = stream,
     err => console.error(err)
   )
+  document.getElementById('img2')
+    .setAttribute(
+        'src', "/images/bladerunner.jpg"
+    );
+  document.getElementById("name").innerHTML = "no faces detected"
+  document.getElementById("film").innerHTML = " "
 }
-
-function getRandomInt(max) {
-  return Math.floor(Math.random()*Math.floor(max))
-};
-
-startVideo()
 
 async function getData(expressions) {
 
@@ -34,12 +34,14 @@ async function getData(expressions) {
 
   const response = await fetch('/api', options);
   const data = await response.json();
-
-  if (data.length > 1) {
+  if (data.image.length > 1) {
   document.getElementById('img2')
     .setAttribute(
-        'src', data
-    ); };
+        'src', data.image
+    );
+  document.getElementById("name").innerHTML = data.name + " as " + data.character + " in "
+  document.getElementById("film").innerHTML = data.film
+  };
 };
 
 
@@ -51,13 +53,15 @@ video.addEventListener('play', () => {
 
   setInterval(async () => {
     const detections = await faceapi.detectAllFaces(video,
-    new faceapi.SsdMobilenetv1Options()).withFaceLandmarks().withFaceExpressions()
-    console.log(detections)
+    // new faceapi.SsdMobilenetv1Options()).withFaceLandmarks().withFaceExpressions()
+    new faceapi.TinyFaceDetectorOptions()).withFaceLandmarks().withFaceExpressions()
 
     if (detections.length == 0) {
       canvas.getContext('2d').clearRect(0, 0, canvas.width, canvas.height)
       console.log('undefined')
       document.getElementById('img2').src = 'images/witch.png';
+      document.getElementById("name").innerHTML = "no faces detected"
+      document.getElementById("film").innerHTML = " "
       var exp = [1,1,1,1,1,1,1]
       getData(exp)
       return

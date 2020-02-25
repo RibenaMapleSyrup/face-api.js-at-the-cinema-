@@ -115,7 +115,7 @@ app.post('/api', (request, response) => {
     for (item of data) {
       norm = math.norm(math.subtract(results, item.expressions))
       if (norm < threshold){
-        doc.push(item.filename)
+        doc.push([item.name, item.character, item.film, item.filename])
       }
     };
 
@@ -133,9 +133,15 @@ app.post('/api', (request, response) => {
       q.add(results)
     }
 
-    let url = 'images/' + file;
+    let url = 'images/' + file[3];
     let b64 = base64Img.base64Sync(url)
-    response.json(b64);
+    send = {
+    "name": file[0],
+    "character": file[1],
+    "film": file[2],
+    "image": b64};
+    
+    response.json(send);
   });
 });
 

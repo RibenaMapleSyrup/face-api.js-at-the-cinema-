@@ -22,6 +22,7 @@
 {"character":"Luke","name":"Ryan Gosling","film":"The Place Beyond the Pines","quote":"","width":"245","height":"310","expressions":[0.65,0,0.35,0,0,0,0],"filename":"ThePlaceBeyondthePines.png","_id":"MWidYXpqxeDIuHf7"}
 {"character":"Charley","name":"Julianne Moore","film":"A Single Man","quote":"","width":"471","height":"487","expressions":[0,1,0,0,0,0,0],"filename":"ASingleMan.png","_id":"NLVa76f5j7OlLuHf"}
 {"character":"Elio Perlman","name":"Timothée Chalamet","film":"Call Me By Your Name","quote":"","width":"433","height":"431","expressions":[0.5,0,0.5,0,0,0,0],"filename":"CallMeByYourName.png","_id":"O5AEHbLDpIIExWXW"}
+{"character":"Thomas Wake","name":"Willem Dafoe","film":"The Lighthouse","quote":"","width":"900","height":"1172","expressions":[0,0,0,0,1,0,0],"filename":"TheLighthouse.jpg","_id":"Og4aEcsnoTyEJ48h"}
 {"character":"Chris Washington","name":"Daniel Kaluuya","film":"Get Out ","quote":"","width":"900","height":"1172","expressions":[0,0,0,0,1,0,0],"filename":"GetOut.png","_id":"Ov4aEcsnoSyEJ47h"}
 {"character":"Connie Nikas","name":"Robert Pattinson","film":"Good Time","quote":"","width":"1179","height":"1085","expressions":[0,0,0,0,0,0,1],"filename":"GoodTime.png","_id":"OzZkGbIr4JCo53xX"}
 {"character":"Mason","name":"Ellar Coltrane ","film":"Boyhood","quote":"","width":"267","height":"338","expressions":[0,1,0,0,0,0,0],"filename":"Boyhood.png","_id":"QZJtxm5pnCPICFA8"}
@@ -58,6 +59,6 @@
 {"character":"Nux","name":"Nicolas Hoult","film":"Mad Max: Fury Road","quote":"","width":"440","height":"567","expressions":[0.01,0,0,0,0,0,0.99],"filename":"MadMax:FuryRoad.png","_id":"uvYvgyelzAQRoxKE"}
 {"character":"Willoughby","name":"Wyatt Russell","film":"Everybody Wants Some!!","quote":"","width":"127","height":"241","expressions":[0,1,0,0,0,0,0],"filename":"EverybodyWantsSome!!.png","_id":"vCK15imTYHUOxAAf"}
 {"character":"Howard Ratner","name":"Adam Sandler","film":"Uncut Gems ","quote":"","width":"1080","height":"1261","expressions":[0,1,0,0,0,0,0],"filename":"UncutGems.png","_id":"w7fP1Retv5Ga571l"}
-{"character":"Mildred","name":"Frances McDormand","film":"Three Billboards ","quote":"","width":"232","height":"283","expressions":[0.96,0,0,0.03,0,0,0.01],"filename":"ThreeBillboards.png","_id":"wPK1pk16QWisp1wP"}
+{"character":"Mildred","name":"Frances McDormand","film":"Three Billboards Ouside Ebbing Missouri","quote":"","width":"232","height":"283","expressions":[0.96,0,0,0.03,0,0,0.01],"filename":"ThreeBillboards.png","_id":"wPK1pk16QWisp1wP"}
 {"character":"Yalini","name":"Kalieaswari Srinivasan","film":"Dheepan","quote":"","width":"455","height":"509","expressions":[0,1,0,0,0,0,0],"filename":"Dheepan.png","_id":"xRbApxv1DXujJ3Yz"}
 {"character":"Brandon Sullivan","name":"Michael Fassbender","film":"Shame","quote":"","width":"227","height":"288","expressions":[0.3,0,0.7,0,0,0,0],"filename":"Shame.png","_id":"yeDxzuVmAinyYYhh"}

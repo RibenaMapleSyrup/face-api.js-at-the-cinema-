@@ -9,9 +9,9 @@
   <script defer src="script.js"></script>
   <link rel="stylesheet" href="https://unpkg.com/carbon-components/css/carbon-components.min.css" type="text/css">
   <link rel="stylesheet" type= "text/css" href="style.css">
-
 </head>
 <body>
+
 
   <div class="bx--grid header ">
     <div class="bx--row">
@@ -20,17 +20,29 @@
   </div>
 
   <div class="bx--grid">
-    <div class="bx--row wrapper ">
-      <div class="bx--col-md-4 centreAlignment" id="canvasContainer">
+    <!-- <div class="bx--row wrapper "> -->
+    <div class="bx--row">
+      <div class="bx--col" id="canvasContainer">
             <video id="video" width=650; height=480; position=absolute; autoplay muted >
             </video>
-
       </div>
-      <div class="bx--col-md-4 bx--row-md-4 centreAlignment ">
-        <img id='img2' defer src= "/images/bladerunner.jpg"
+
+      <div class="bx--col">
+        <img id='img2'
         style="float:right;width:100%;height:480px;object-fit:cover;">
       </div>
     </div>
+
+    `<div class="bx--row">
+      <h1 class="bx--col-max centreAlignment fontSize48 whiteText">
+         <p id="name" class="fontSize32 topAndBottomMargin"> </p>
+         <div>
+         <p id="film" class="fontSize48 topAndBottomMargin topAndBottomPadding"> </p>
+       </div>
+      </h1>
+    </div>`
+
+    <!-- </div> -->
   </div>
 </body>
 </html>

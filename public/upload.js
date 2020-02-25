@@ -2,7 +2,6 @@ Promise.all([
   faceapi.nets.faceLandmark68Net.loadFromUri('/models'),
   faceapi.nets.faceExpressionNet.loadFromUri('/models'),
   faceapi.nets.ssdMobilenetv1.loadFromUri('/models')
-
 ]).then(startVideo)
 
 function startVideo() {
@@ -45,11 +44,10 @@ function send(detections) {
       }).done(function(response){ //
           $("#server-results").html(response);
       });
-      
+
 document.getElementById("uploadForm").reset();
 return false
-
-}
+};
 
 function run(input) {
 var reader = new FileReader();
