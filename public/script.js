@@ -22,6 +22,11 @@ function startVideo() {
   document.getElementById("film").innerHTML = " "
 }
 
+video.addEventListener('loadeddata', function(){
+  document.getElementById("info").style.display = "block";
+  document.getElementById("character").style.display = "block";
+}, false)
+
 async function getData(expressions) {
 
   const options = {

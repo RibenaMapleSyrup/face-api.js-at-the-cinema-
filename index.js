@@ -69,17 +69,26 @@ function getRandomInt(max){
   return Math.floor(Math.random()*Math.floor(max));
 }
 
-function getBase64(file) {
-   var reader = new FileReader();
-   reader.readAsDataURL(file);
-   reader.onload = function () {
-     console.log(reader.result);
-     return reader.result
-   };
-   reader.onerror = function (error) {
-     console.log('Error: ', error);
-   };
-}
+// function getBase64(file) {
+//    var reader = new FileReader();
+//    reader.readAsDataURL(file);
+//    reader.onload = function () {
+//      console.log(reader.result);
+//      return reader.result
+//    };
+//    reader.onerror = function (error) {
+//      console.log('Error: ', error);
+//    };
+// }
+
+// function base64_encode(file) {
+//     // read binary data
+//     var bitmap = fs.readFileSync(file, { encoding: 'base64' });
+//     // convert binary data to base64 encoded string
+//     // console.log(bitmap)
+//     return bitmap;
+// }
+
 
 // initiate NeDB database for storing uploaded image inference values and for
 // querying to find images that matches webcam image the closest
@@ -145,13 +154,13 @@ app.post('/api', (request, response) => {
     }
 
     let url = 'images/' + file[3];
-    let b64 = getBase64(url)
+    let b64 = 'data:image/png;base64,' + fs.readFileSync(url, { encoding: 'base64' });
     send = {
     "name": file[0],
     "character": file[1],
     "film": file[2],
     "image": b64};
-    
+
     response.json(send);
   });
 });

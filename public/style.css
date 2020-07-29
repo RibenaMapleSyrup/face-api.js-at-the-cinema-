@@ -10,6 +10,14 @@ video {
   object-fit: cover;
 }
 
+#character {
+  display: none;
+}
+
+#info {
+  display: none;
+}
+
 #canvasContainer {
   width: 650px;
   height: 560px;
