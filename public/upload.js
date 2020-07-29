@@ -28,7 +28,6 @@ function send(detections) {
         detections[0].expressions.disgusted.toFixed(2),
         detections[0].expressions.surprised.toFixed(2)
       ]
-      console.log('here')
 
       form_data.append('width', JSON.stringify(detections[0].landmarks.imageWidth));
       form_data.append('height', JSON.stringify(detections[0].landmarks.imageHeight));

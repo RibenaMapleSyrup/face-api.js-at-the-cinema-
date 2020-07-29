@@ -39,16 +39,17 @@ async function getData(expressions) {
 
   const response = await fetch('/api', options);
   const data = await response.json();
-  if (data.image.length > 1) {
+  if (data.image) {
+    if (data.image.length > 1) {
   document.getElementById('img2')
     .setAttribute(
         'src', data.image
     );
   document.getElementById("name").innerHTML = data.name + " as " + data.character + " in "
   document.getElementById("film").innerHTML = data.film
+  }
   };
 };
-
 
 video.addEventListener('play', () => {
   const canvas = faceapi.createCanvasFromMedia(video)
@@ -63,7 +64,6 @@ video.addEventListener('play', () => {
 
     if (detections.length == 0) {
       canvas.getContext('2d').clearRect(0, 0, canvas.width, canvas.height)
-      console.log('undefined')
       document.getElementById('img2').src = 'images/witch.png';
       document.getElementById("name").innerHTML = "no faces detected"
       document.getElementById("film").innerHTML = " "
